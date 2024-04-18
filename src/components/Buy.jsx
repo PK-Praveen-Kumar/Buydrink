@@ -16,11 +16,11 @@ const Buy=({state})=>{
     }
     return  (
       <div className="center">
-       <h1>Thanks</h1>
+       
         <form onSubmit={buyItems}>
           <div className="inputbox">
             <input type="text" required="required" id="name" />
-            <span>Name</span>
+            <span className="bg-red-300 text-7xl">Name</span>
           </div>
           <div className="inputbox">
             <input type="text" required="required" id="message" />

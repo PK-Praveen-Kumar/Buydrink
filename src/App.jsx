@@ -16,7 +16,7 @@ function App() {
   useEffect(()=>{
     const template=async()=>{
    
-      const contractAddres="0xa64e3144835aF8781c750ceC432784a68d883266";
+      const contractAddres="0xac144eCFf2536079Bc81846e9F3747B3F33dc608";
       
       //Metamask part
       //1. In order do transactions on goerli testnet
@@ -33,7 +33,7 @@ function App() {
           abi,
           signer
         )
-        console.log(contract)
+        
       setState({provider,signer,contract});
        
       }catch(error){

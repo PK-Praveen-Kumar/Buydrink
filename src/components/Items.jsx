@@ -7,18 +7,20 @@ const Items=({state})=>{
         const ItemsMessage = async()=>{
           const memos = await contract.Getitems();
           setItems(memos)
-          console.log(memos)
+          
         }
         contract && ItemsMessage()
     },[contract])
+   
+   
     return (
         <div className="container-fluid">
           <h3 style={{ textAlign: "center", marginTop: "20px" }}>Messages</h3>           
                 <table>
                 <tbody >
-          {Items.map((Item) => {
+          {Items.map((Item , index) => {
             return (
-                    <tr >
+                    <tr key={index} >
                       <td 
                         style={{
                           backgroundColor: "dodgerblue",
@@ -42,8 +44,10 @@ const Items=({state})=>{
                           color:"white"
                         }}
                       >
+                        
                         {new Date(Item.timestamp * 1000).toLocaleString()}
-                      </td>
+                        
+                      </ td>
                       <td  
                         style={{
                           backgroundColor: "dodgerblue",

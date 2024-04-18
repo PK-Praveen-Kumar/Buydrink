@@ -19,7 +19,7 @@ function Walletecon() {
       window.ethereum.removeAllListeners();
     };
    }, []);
-
+   
   const connectMetaMask = () => {
     window.ethereum
       .request({ method: 'eth_requestAccounts' })
@@ -99,7 +99,7 @@ function Walletecon() {
         </div>
       )}
 
-      {network && (
+      {/* {network && (
         <div>
           <p>Current Network: {network}</p>
           {network === '3' || network === '4' ? (
@@ -117,7 +117,7 @@ function Walletecon() {
             <p>Connect to Ropsten or Rinkeby to get test Ether.</p>
           )}
         </div>
-      )}
+      )} */}
     </div>
   );
 }
