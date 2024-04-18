@@ -21,55 +21,18 @@ const Items=({state})=>{
           {Items.map((Item , index) => {
             return (
                     <tr key={index} >
-                      <td 
-                        style={{
-                          backgroundColor: "dodgerblue",
-                          border: "1px solid white",
-                          borderCollapse: "collapse",
-                          padding: "7px",
-                          width: "100px",
-                          color:"white",
-                         
-                        }}
-                      >
+                      <td>
                         {Item.name}
                       </td>
-                      <td 
-                        style={{
-                          backgroundColor: "dodgerblue",
-                          border: "1px solid white",
-                          borderCollapse: "collapse",
-                          padding: "7px",
-                          width: "800px",
-                          color:"white"
-                        }}
-                      >
+                      <td>
                         
                         {new Date(Item.timestamp * 1000).toLocaleString()}
                         
                       </ td>
-                      <td  
-                        style={{
-                          backgroundColor: "dodgerblue",
-                          border: "1px solid white",
-                          borderCollapse: "collapse",
-                          padding: "7px",
-                          width: "300px",
-                          color:"white"
-                        }}
-                      >
+                      <td >
                         {Item.message}
                       </td>
-                      <td  className="container-fluid"
-                        style={{
-                          backgroundColor: "dodgerblue",
-                          border: "1px solid white",
-                          borderCollapse: "collapse",
-                          padding: "7px",
-                          width: "400px",
-                          color:"white"
-                        }}
-                      >
+                      <td  className="container-fluid" >
                         {Item.from}
                       </td>
                     </tr>

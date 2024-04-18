@@ -1,3 +1,61 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+body{
+          color: white ;
+          background-color: black;
+          flex-direction: column;
+}
+
+td{
+          background-color: red;
+          border: 1px solid white;
+          padding: "7px";
+          width: "100px";
+          color:"white";
+          padding: 30px 130px;
+}
+
+
+.wallate{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+}
+.wallatecon{
+          padding: 10px 40px;
+}
+.info_con{
+          display: flex;
+          padding-right: 20px;
+          p{
+                    padding-left: 20px;
+          }
+}
+
+.center{
+         padding-top: 50px;
+}
+input{
+          padding: 10px 50px;
+          margin: 10px;
+}
+.input_name{
+          padding-right: 40px;
+}
+.input_msg{
+          padding-right: 22px;
+}
+form{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+       
+          
+          
+}
+.pay{
+          margin-left: 50px;
+}.pay:hover{
+          background-color: rgb(0, 0, 0);
+          color: beige;
+          padding: 12px 55px;
+}

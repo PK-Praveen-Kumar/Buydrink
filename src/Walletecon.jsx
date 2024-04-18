@@ -85,17 +85,17 @@ function Walletecon() {
   };
 
   return (
-    <div>
+    <div className='wallate'>
       {connected ? (
-        <div>
-          <p>Connected to MetaMask</p>
-          <p>Accounts: {accounts.join(', ')}</p>
-          <button onClick={handleDisconnect}>Disconnect</button>
+        <div className='info_con' >
+          {/* <p>Connected to MetaMask</p> */}
+          <p >Accounts: {accounts.join(', ')}</p>
+          <button className='wallatecon' onClick={handleDisconnect}>Disconnect</button>
         </div>
       ) : (
-        <div>
-          <p>Connect to MetaMask to continue</p>
-          <button onClick={handleConnect}>Connect MetaMask</button>
+        <div className='info_con'>
+          {/* <p>Connect to MetaMask to continue</p> */}
+          <button className='wallatecon' onClick={handleConnect}>Connect MetaMask</button>
         </div>
       )}
 

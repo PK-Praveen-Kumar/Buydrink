@@ -19,15 +19,17 @@ const Buy=({state})=>{
        
         <form onSubmit={buyItems}>
           <div className="inputbox">
+          <span className="input_name">Name</span>
             <input type="text" required="required" id="name" />
-            <span className="bg-red-300 text-7xl">Name</span>
+            
           </div>
           <div className="inputbox">
+          <span className="input_msg">Message</span>
             <input type="text" required="required" id="message" />
-            <span>Message</span>
+           
           </div>
           <div className="inputbox">
-            <input type="submit" value="Pay"  disabled={!state.contract}/>
+            <input className="pay" type="submit" value="Pay"  disabled={!state.contract}/>
           </div>
         </form>
           
