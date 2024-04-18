@@ -20,15 +20,11 @@ const Items=({state})=>{
                 <tbody >
           {Items.map((Item , index) => {
             return (
-                    <tr key={index} >
+                    <tr className="table" key={index} >
                       <td>
                         {Item.name}
                       </td>
-                      <td>
-                        
-                        {new Date(Item.timestamp * 1000).toLocaleString()}
-                        
-                      </ td>
+                      
                       <td >
                         {Item.message}
                       </td>

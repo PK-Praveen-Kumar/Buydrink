@@ -44,8 +44,13 @@ function App() {
   },[])
   return (
     <div >
+      <div className='nav'>
+      <h1> BUYDRINK </h1>
+      <div className='nav_con' > < Walletecon /></div>
+      </div>
+      
     
-      < Walletecon />
+      
    
       < Buy state={state} />
       < Items state={state} />
